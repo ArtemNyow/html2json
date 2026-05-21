@@ -249,6 +249,10 @@ function html2json(htmlText) {
   }
 }
 
+if (typeof module !== "undefined" && typeof module.exports !== "undefined") {
+  module.exports = { html2json };
+}
+
 function showExample1() {
   const htmlExample = `<!DOCTYPE html>
 <html lang="en">
